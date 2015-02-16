@@ -1,0 +1,16 @@
+header {
+    border-bottom: 1px solid #ccc;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+}
+section {
+    clear: both;
+}
+footer {
+    font-size: 10px;
+}
