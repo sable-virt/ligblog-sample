@@ -1,10 +1,15 @@
+var webpack = require('webpack');
 module.exports = {
     entry: {
         app: './app.js',
-        app2: './app2.js'
+        index: './index.js',
+        detail: './detail.js'
     },
     output: {
         path: __dirname + "/dist",
-        filename: "[name].bundle.js"
-    }
+        filename: "[name].js"
+    },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin('app','app.js')
+    ]
 };

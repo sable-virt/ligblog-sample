@@ -1,2 +1,2 @@
 var sub = require('./sub');
-sub('sub');
+sub('detail');
