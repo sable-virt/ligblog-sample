@@ -94,10 +94,13 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__.e/* nsure */(1, function(sub) {
-	    var sub = __webpack_require__(1);
-	    sub('test');
-	});
+	window.setTimeout(function() {
+	    __webpack_require__.e/* nsure */(1, function(sub) {
+	        var sub = __webpack_require__(1);
+	        sub('test');
+	    });
+	},3000);
+
 
 /***/ }
 /******/ ])
