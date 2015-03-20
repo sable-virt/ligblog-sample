@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>My Angular App</title>
+    <script src="../js/angular.js"></script>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>配列もプロパティもOne-time Bindingした例</h1>
+<div id="demo" ng-controller="RootCtrl">
+    <input type="button" ng-click="change()" value="change title"/>
+    <h1>{{title}}</h1>
+    <ul>
+        <li ng-repeat="user in ::users">
+            <div>{{::user.id}} - {{::user.name}}</div>
+            <div>{{::user.value}}</div>
+        </li>
+    </ul>
+</div>
+<script src="../js/data.js"></script>
+<script src="../js/demo4.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>My Angular App</title>
+    <script src="../js/angular.js"></script>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>One-time bindingを使わない例</h1>
+<div id="demo" ng-controller="RootCtrl">
+    <h1>{{title}}</h1>
+    <input type="button" value="タイトルを変える" ng-click="change();"/>
+    <div ng-controller="Child1Ctrl">
+        <h2>
+            {{name}}
+        </h2>
+        <input type="button" value="名前を取得" ng-click="change();"/>
+    </div>
+    <div ng-controller="Child2Ctrl">
+        <h2>
+            {{name}}
+        </h2>
+        <input type="button" value="名前を取得" ng-click="change();"/>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
