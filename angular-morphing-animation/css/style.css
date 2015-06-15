@@ -1,0 +1,43 @@
+.view-container {
+    position: relative;
+}
+
+.view.ng-animate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 500px;
+}
+
+.view.ng-enter, .view.ng-leave {
+    transition: 0.5s cubic-bezier(.55,0,.1,1) all;
+}
+
+.view.ng-enter {
+    opacity: 0;
+}
+
+.view.ng-enter.ng-enter-active, .view.ng-leave {
+    opacity: 1;
+}
+
+.view.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+.name.ng-anchor-in, .thumb.ng-anchor-in,.shadow.ng-anchor-in {
+    transition: 0.5s cubic-bezier(.55,0,.1,1) all;
+}
+
+.profile.shadow {
+    padding: 20px;
+}
+
+.profile.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+.profile-container {
+    padding: 20px;
+    margin: 20px;
+}

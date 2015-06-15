@@ -1,0 +1,8 @@
+<ul class="collection">
+    <li class="collection-item avatar" ng-repeat="member in home.members" ui-sref="profile({id:member.id})">
+        <img ng-src="./images/{{member.id}}.jpg" alt="" class="circle thumb"
+             ng-animate-ref="thumb-{{ member.id }}" width="60" height="60">
+        <div class="name" ng-animate-ref="title-{{ member.id }}">{{member.name}}</div>
+        <div class="z-depth-1" ng-animate-ref="shadow-{{member.id}}"></div>
+    </li>
+</ul>
