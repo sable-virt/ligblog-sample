@@ -1,0 +1,15 @@
+<div class="row profile-container">
+    <div class="col s8 offset-s2">
+        <div class="z-depth-1 profile shadow" ng-animate-ref="shadow-{{profile.member.id}}">
+            <div>
+                <img ng-src="./images/{{profile.member.id}}.jpg" alt="" class="profile circle thumb"
+                     ng-animate-ref="thumb-{{ profile.member.id }}" width="80" height="80">
+                <div class="profile name" ng-animate-ref="title-{{ profile.member.id }}">{{ profile.member.name }}</div>
+            </div>
+            <div>
+                {{profile.member.description}}
+            </div>
+        </div>
+        <a ui-sref="/" class="waves-effect waves-light btn"><i class="mdi-navigation-arrow-back left"></i>戻る</a>
+    </div>
+</div>
