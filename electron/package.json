@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node_modules/.bin/electron .",
-    "release": "node release.js"
+    "release": "node release.js && npm run targz",
+    "targz": "tar -zcvf ../_download/electron/mac.tar.gz ./dist/DemoApp-darwin-x64 && tar -zcvf ../_download/electron/win.tar.gz ./dist/DemoApp-win32-x64"
   },
   "dependencies": {
     "angular": "^1.4.4",
