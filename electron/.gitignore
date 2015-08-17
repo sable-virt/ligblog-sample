@@ -1,0 +1,6 @@
+node_modules
+dist
+.idea
+.DS_Store
+LIGBlogEditor-darwin-x64
+LIGBlogEditor-win32-x64

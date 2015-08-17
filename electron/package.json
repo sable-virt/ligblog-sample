@@ -1,0 +1,19 @@
+{
+  "name": "DemoApp",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/electron .",
+    "release": "node release.js && npm run targz",
+    "targz": "tar -zcvf ../_download/electron/mac.tar.gz ./dist/DemoApp-darwin-x64 && tar -zcvf ../_download/electron/win.tar.gz ./dist/DemoApp-win32-x64"
+  },
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-animate": "^1.4.4",
+    "angular-ui-router": "^0.2.15"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.0.1",
+    "electron-prebuilt": "^0.30.0"
+  }
+}
